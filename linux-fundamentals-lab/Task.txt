@@ -1,0 +1,9 @@
+Tasks for Today:
+1.	Environment Setup: If you haven't already, install a Linux distribution (Ubuntu via WSL2 on Windows, or a Multipass VM).
+2.	Permission Mastery: Create a file named deploy.sh. Change its permissions so that only the owner can read/write/execute it, and everyone else has zero access.
+3.	Process Inspection: Learn to use top or htop. Identify a process, find its PID, and learn how to gracefully terminate it versus "killing" it forcefully.
+The First Hurdle
+Before you touch a server, you must understand the Root User and Sudo. In production, we never log in as root.
+The Question:
+1.	What is the technical difference between the command sudo su - and just typing sudo before a command?
+2.	What is the purpose of the /etc/sudoers file, and why should you never edit it with a standard text editor like nano or vi (what is the "safe" command used instead)?
