@@ -2,8 +2,6 @@
 
 This repository documents my daily progress, lab implementations, and technical evaluations as I transition into a Cloud DevOps Engineer role.
 
----
-
 ## 📅 Day 1: The Linux Filesystem & Permissions
 
 ### 📖 Overview
