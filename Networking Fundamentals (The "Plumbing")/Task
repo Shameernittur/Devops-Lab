@@ -1,0 +1,18 @@
+ou cannot manage the Cloud or Kubernetes if you don't understand how packets move. Today is about IP Addressing and Ports.
+
+The Scenario:
+You are told that a web server is running on a Linux VM, but you can't see the website in your browser. You need to verify if the server is actually listening and if the "plumbing" is connected.
+
+Your Tasks:
+Identify your IP: Find your internal IP address on your AlmaLinux VM using the command line (don't use ifconfig, it's deprecated—use the ip toolset).
+
+Check the "Listeners": Use ss or netstat to find all services currently listening for connections. Identify which PID is listening on port 22 (SSH).
+
+Local Connectivity: Use the curl command to see if you can reach localhost on port 80. If it fails, explain the error code you get.
+
+The Question:
+What is the difference between a Public IP and a Private IP, and why do we use NAT (Network Address Translation) in a VPC?
+
+What is the "Loopback" address, and what is its specific IP?
+
+Show me the commands you used and the outputs. If you get an error, don't just say "it failed"—show me the specific error message.
