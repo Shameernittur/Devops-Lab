@@ -65,4 +65,12 @@ curl http://localhost:80
 | **Local Web Test** | `curl -I localhost:80` |
 | **Verify Port 22** | `sudo ss -lp |
 
-Would you like me to show you how to install a web server like **Nginx** so that the `curl` command actually succeeds?
+### Technical Review & Evaluation
+
+* **`ip addr show`**: Correct. The `ip` route2 suite is the industry standard.
+* **`ss -tunlp`**: Excellent. Most juniors forget the `-p` flag, but without it, you can't see the **Process ID**, which makes the command useless for troubleshooting.
+* **NAT (Network Address Translation)**: You're partially right about IP depletion, but missed the **Security** aspect. NAT acts as a one-way gate. It allows internal resources to reach the internet while hiding their private addresses from external attackers.
+* **Loopback**: Correct. `127.0.0.1` is the standard. In the context of the OSI model, this stays within the software layers and never hits the physical network card.
+
+**Rating: 8/10.** You are becoming comfortable with the "investigative" side of Linux.
+
